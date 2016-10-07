@@ -18,6 +18,7 @@ scalacOptions := Seq("-deprecation",
 
 crossPaths := false
 fork := true
+autoScalaLibrary := false
 
 scalaSource in Compile := baseDirectory.value / "src"
 scalaSource in Test := baseDirectory.value / "src-test"
