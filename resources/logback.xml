@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date{ISO8601} %-5level %logger{36} %X{akkaSource} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+            <file>logs/log.log</file>
+            <encoder>
+                <pattern>%date [%thread] %level %logger - %msg%n</pattern>
+            </encoder>
+        </appender>
+    -->
+
+    <appender name="ASYNC_DEFAULTS" class="ch.qos.logback.classic.AsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <queueSize>512</queueSize>
+        <appender-ref ref="STDOUT"/>
+        <!--<appender-ref ref="FILE"/>-->
+    </appender>
+
+    <logger name="akka" level="INFO"/>
+
+    <root level="debug">
+        <appender-ref ref="ASYNC_DEFAULTS"/>
+    </root>
+</configuration>
