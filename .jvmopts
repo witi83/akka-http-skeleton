@@ -1,0 +1,9 @@
+-Xms256m
+-Xmx2g
+-XX:+CMSClassUnloadingEnabled
+-XX:+UseConcMarkSweepGC
+-XX:MetaspaceSize=128m
+-XX:MaxMetaspaceSize=128m
+-XX:+UseNUMA
+-XX:+AggressiveOpts
+
