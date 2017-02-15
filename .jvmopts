@@ -3,7 +3,7 @@
 -XX:+CMSClassUnloadingEnabled
 -XX:+UseConcMarkSweepGC
 -XX:MetaspaceSize=128m
--XX:MaxMetaspaceSize=128m
 -XX:+UseNUMA
 -XX:+AggressiveOpts
-
+-XX:TieredStopAtLevel=1
+-Xverify:none

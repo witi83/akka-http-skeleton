@@ -1,13 +1,13 @@
 # akka-http-skeleton
-Simple akka http application with an optimized build.sbt, SBT_OPTS
+Simple akka http application with an optimized build.sbt and .jvmopts
 
 Dependencies:
 * scala 2.11.8
-* sbt 0.13.12
-* akka-http 2.4.11
-* akka-http-circe 1.10.1
-* circe 0.5.2
-* scalatest 3.0.0
-* slf4j 1.7.12
-* logback 1.1.7
+* sbt 0.13.13
+* akka-http 10.0.3
+* akka-http-circe 1.12.0
+* circe 0.7.0
+* scalatest 3.0.1
+* slf4j 1.7.23
+* logback 1.2.1
 * sbt-revolver 0.8.0

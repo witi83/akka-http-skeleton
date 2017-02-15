@@ -5,7 +5,7 @@ import akka.http.scaladsl.testkit.ScalatestRouteTest
 import de.heikoseeberger.akkahttpcirce.CirceSupport._
 import org.scalatest.{Matchers, WordSpec}
 
-class ApiSpec extends WordSpec with Matchers with ScalatestRouteTest {
+class AppSpec extends WordSpec with Matchers with ScalatestRouteTest {
   import io.circe.generic.auto._
 
   "GET /app" should {

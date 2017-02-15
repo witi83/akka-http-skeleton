@@ -9,8 +9,6 @@ import de.heikoseeberger.akkahttpcirce.CirceSupport._
 import io.circe.generic.auto._
 import org.slf4j.LoggerFactory
 
-import scala.concurrent.ExecutionContext
-
 object Boot extends Routes {
   implicit val config = ConfigFactory.load()
   implicit val system = ActorSystem("app", config)
