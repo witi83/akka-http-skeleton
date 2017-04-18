@@ -1,4 +1,7 @@
 # akka-http-skeleton
+
+[![Build Status](https://travis-ci.org/witi83/akka-http-skeleton.svg?branch=master)](https://travis-ci.org/witi83/akka-http-skeleton)
+
 Simple akka http application with an optimized build.sbt and .jvmopts
 
 Dependencies:
